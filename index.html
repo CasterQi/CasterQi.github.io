@@ -50,14 +50,14 @@
 </head>
 <body>
 		<div id="goTopBtn"></div>
-		<div id="advLayer" style="position:absolute;	left:316px;	top:80px;	width:302px;	height:171px;	z-index:1;">
+		<!-- <div id="advLayer" style="position:absolute;	left:316px;	top:80px;	width:302px;	height:171px;	z-index:1;">
 				<a href="#">
 					<img src="./images/kefu-bg.png" border="0">
 				</a>
 			</div>
 			<div id="closeAdv" onclick="closeAdv()" style="position:absolute;	left:850px;	top:70px;	width:27px;	height:19px;z-index:2; cursor:hand">
 				<img src="./images/fancy_close.png">
-			</div>
+			</div> -->
 	<div class="jumbotron home home-fullscreen" id="home">
 		<div class="mask"></div>
 		<a href="#" class="logo">
@@ -84,9 +84,8 @@
 		</nav>
 		<div class="container" id="aaa">
 			<div class="header-info">
-				<h1>Moderno</h1>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,<br> sed do eiusmod
-					tempor incididunt ut labore et dolore magna aliqua.
+				<h1>朱家琦's blog</h1>
+				<p>这里或许很冷清，<br> 但一直有一个孤高的灵魂在这儿呢！
 				</p>
 				<input type="text" class="form-control" value="请键入内容" onfocus="if(this.value=='请键入内容') this.value=''"
 				onblur="if(this.value=='')this.value='请键入内容'">
@@ -307,27 +306,27 @@
 	
 	});
 
-	var picTop = 0;
-        var advTop = 0;
+	// var picTop = 0;
+    //     var advTop = 0;
 
-        function init() {
-            picTop = document.getElementById("advLayer").style.pixelTop;
-            advTop = document.getElementById("closeAdv").style.pixelTop;
-        }
+    //     function init() {
+    //         picTop = document.getElementById("advLayer").style.pixelTop;
+    //         advTop = document.getElementById("closeAdv").style.pixelTop;
+    //     }
 
-        function move() {
+    //     function move() {
 
-            document.getElementById("advLayer").style.pixelTop = picTop + document.body.scrollTop;
-            document.getElementById("closeAdv").style.pixelTop = advTop + document.body.scrollTop;
+    //         document.getElementById("advLayer").style.pixelTop = picTop + document.body.scrollTop;
+    //         document.getElementById("closeAdv").style.pixelTop = advTop + document.body.scrollTop;
 
-        }
+    //     }
 
-        function closeAdv() {
-            document.getElementById("advLayer").style.display = "none";
-            document.getElementById("closeAdv").style.display = "none";
-        }
+    //     function closeAdv() {
+    //         document.getElementById("advLayer").style.display = "none";
+    //         document.getElementById("closeAdv").style.display = "none";
+    //     }
 
-        window.onscroll = move; //窗口的滚动事件，当页面滚动时调用move( )函数
+    //     window.onscroll = move; //窗口的滚动事件，当页面滚动时调用move( )函数
 	
 	</script>
 </body>
