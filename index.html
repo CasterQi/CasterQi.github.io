@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+
+<html lang="en-us">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Moredno Html theme</title>
+
+	<!-- Load fonts -->
+	<link href='http://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Lora' rel='stylesheet' type='text/css'>
+
+	<!-- Load css styles -->
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+	<link rel="stylesheet" type="text/css" href="css/font-awesome.css" />
+	<link rel="stylesheet" type="text/css" href="css/style.css" />
+	<script type="text/javascript">
+		
+
+			var num = 0;
+				var bg_src = new Array("./bg/1.jpg", "./bg/2.jpg","./bg/3.jpg", "./bg/4.jpg");
+				//这个数组就是背景图的地址
+				setInterval("showTime()", 5000);//定时时间，5秒
+				function showTime() {
+				  if (num == bg_src.length) {
+					num = 0;
+				  }
+				//    $(".jumbotron :not( #aaa > *  ) and :not(#aaa) ").fadeOut(100,function(){
+				// 				//$(".jumbotron").html('<img src="' + bg_src[num] + '">');
+				// 				$(".jumbotron").css('background',"url('"+ bg_src[num] +"')")
+				// 				$(".jumbotron :not( #aaa > * ) and :not(#aaa)").fadeIn(100);
+				//    })
+				//    $(".jumbotron :not( #aaa > *  )  ").fadeOut(1000,function(){
+				// 				//$(".jumbotron").html('<img src="' + bg_src[num] + '">');
+				// 				$(".jumbotron :not( #aaa > * ) ").fadeIn(1000);
+				//    })
+				   $(".jumbotron").css('background',"url('"+ bg_src[num] +"')")
+				  num = num + 1;
+				}
+
+
+
+</script>
+
+<style>
+		#goTopBtn {position: fixed;line-height:36px;width:36px;bottom:35px;height:36px;cursor:pointer;display:none;
+		background:url(./img/top.png);}
+
+</style>
+</head>
+<body>
+		<div id="goTopBtn"></div>
+		<div id="advLayer" style="position:absolute;	left:316px;	top:80px;	width:302px;	height:171px;	z-index:1;">
+				<a href="#">
+					<img src="./images/kefu-bg.png" border="0">
+				</a>
+			</div>
+			<div id="closeAdv" onclick="closeAdv()" style="position:absolute;	left:850px;	top:70px;	width:27px;	height:19px;z-index:2; cursor:hand">
+				<img src="./images/fancy_close.png">
+			</div>
+	<div class="jumbotron home home-fullscreen" id="home">
+		<div class="mask"></div>
+		<a href="#" class="logo">
+			<img src="img/logo.png" alt="Moderno - Theme">
+		</a>
+		<a href="" class="menu-toggle" id="nav-expander"><i class="fa fa-bars"></i></a>
+		<!-- Offsite navigation -->
+		<nav class="menu">
+			<a href="#" class="close"><i class="fa fa-close"></i></a>
+			<h3>Menu</h3>
+			<ul class="nav">
+				<li><a data-scroll href="#home">Home</a></li>
+				<li><a data-scroll href="#services">Service</a></li>
+				<li><a data-scroll href="#portfolio">Portfolio</a></li>
+				<li><a data-scroll href="#contact">Contact</a></li>
+			</ul>
+			<ul class="social-icons">
+				<li><a href=""><i class="fa fa-facebook"></i></a></li>
+				<li><a href=""><i class="fa fa-twitter"></i></a></li>
+				<li><a href=""><i class="fa fa-dribbble"></i></a></li>
+				<li><a href=""><i class="fa fa-behance"></i></a></li>
+				<li><a href=""><i class="fa fa-pinterest"></i></a></li>
+			</ul>
+		</nav>
+		<div class="container" id="aaa">
+			<div class="header-info">
+				<h1>Moderno</h1>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,<br> sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua.
+				</p>
+				<input type="text" class="form-control" value="请键入内容" onfocus="if(this.value=='请键入内容') this.value=''"
+				onblur="if(this.value=='')this.value='请键入内容'">
+				<p>
+				<br>
+				</p>
+				<a href="#" class="btn btn-primary">Get in Touche</a>
+			</div>
+		</div>
+	</div>
+	<!-- Services section start -->
+	<section id="services">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-4">
+					<div class="service-item">
+						<div class="icon"><i class="fa fa-diamond"></i></div>
+						<h3>We Are Creative</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+							tempor incididunt ut labore et dolore magna aliqua Ut enim ad minim veniam,
+							quis nostrud exercitation ullamco.
+						</p>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="service-item">
+						<div class="icon"><i class="fa fa-gear"></i></div>
+						<h3>We Have Skills</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+							tempor incididunt ut labore et dolore magna aliqua.
+						</p>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="service-item">
+						<div class="icon"><i class="fa fa-life-ring"></i></div>
+						<h3>We Love To Help</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+							tempor incididunt ut labore et dolore magna aliqua Ut enim ad minim veniam.
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- Services section end -->
+    <div class="copyrights">Collect from <a href="http://www.cssmoban.com/"  title="网站模板">网站模板</a></div>
+	<!-- Portfolio section start -->
+	<section id="portfolio" class="darker">
+			
+		<div class="container">
+			<header>
+				<h2>Success Stories</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor.
+				</p>
+			</header>
+			<div id="single-project"></div>
+			<div class="row">
+				<figure class="portfolio-item col-md-4 col-sm-6" >
+					<img class="img-responsive" src="img/projects/project-thumbnail-1.png" alt="Adena icons pack" />
+					<figcaption class="mask">
+						<a href="projects/project-1.html">
+							<i class="glyphicon glyphicon-plus"></i>
+						</a>
+					</figcaption>
+				</figure>
+				<figure class="portfolio-item col-md-4 col-sm-6" >
+					<img class="img-responsive" src="img/projects/project-thumbnail-1.png" alt="Adena icons pack" />
+					<figcaption class="mask">
+						<a href="projects/project-1.html">
+							<i class="glyphicon glyphicon-plus"></i>
+						</a>
+					</figcaption>
+				</figure>
+				<figure class="portfolio-item col-md-4 col-sm-6" >
+					<img class="img-responsive" src="img/projects/project-thumbnail-1.png" alt="Adena icons pack" />
+					<figcaption class="mask">
+						<a href="projects/project-1.html">
+							<i class="glyphicon glyphicon-plus"></i>
+						</a>
+					</figcaption>
+				</figure>
+				<figure class="portfolio-item col-md-4 col-sm-6" >
+					<img class="img-responsive" src="img/projects/project-thumbnail-1.png" alt="Adena icons pack" />
+					<figcaption class="mask">
+						<a href="projects/project-1.html">
+							<i class="glyphicon glyphicon-plus"></i>
+						</a>
+					</figcaption>
+				</figure>
+				<figure class="portfolio-item col-md-4 col-sm-6" >
+					<img class="img-responsive" src="img/projects/project-thumbnail-1.png" alt="Adena icons pack" />
+					<figcaption class="mask">
+						<a href="projects/project-1.html">
+							<i class="glyphicon glyphicon-plus"></i>
+						</a>
+					</figcaption>
+				</figure>
+				<figure class="portfolio-item col-md-4 col-sm-6" >
+					<img class="img-responsive" src="img/projects/project-thumbnail-1.png" alt="Adena icons pack" />
+					<figcaption class="mask">
+						<a href="projects/project-1.html">
+							<i class="glyphicon glyphicon-plus"></i>
+						</a>
+					</figcaption>
+				</figure>
+			</div>
+		</div>
+	</section>
+	<!-- Portfolio section end -->
+	<!-- Contact section start -->
+	<!-- <section id="contact">
+		<div class="container">
+			<header>
+				<h2>Get in Touch</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore.
+				</p>
+			</header>
+			<div class="map-wrapper">
+				
+				<div class="marker">
+					<span>We Are Here</span>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-8">
+					<form class="row">
+						<div class="form-group col-md-6">
+							<input name="name" type="text" placeholder="Your Name" class="form-control" />
+						</div>
+						<div class="form-group col-md-6">
+							<input name="mail" type="email" placeholder="Your Email" class="form-control" />
+						</div>
+						<div class="form-group col-md-12">
+							<input name="subject" type="text" placeholder="Type Message Here..." class="form-control" />
+						</div>
+						<div class="form-group col-md-12">
+							<textarea name="message" class="form-control" rows="10" placeholder="Message"></textarea>
+						</div>
+						<div class="form-group col-md-12">
+							<button class="btn btn-lg btn-primary">Send</button>
+						</div>
+					</form>
+				</div>
+				<div class="col-md-3 col-md-offset-1">
+					<address>
+						<span>Our Address</span>
+						<p>
+							4896 Desert Broom Court<br>
+							Newark, NJ 07102<br>
+							United States
+						</p>
+					</address>
+					<address>
+						<span>Email</span>
+						<p>mail@mail.com</p>
+					</address>
+					<address>
+						<span>Phone</span>
+						<p>+00 123-456-78900</p>
+					</address>
+				</div>
+			</div>
+		</div>
+	</section> -->
+	<!-- Contact section end -->
+	<!-- Footer start -->
+	<footer>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-8">
+					<p>&copy; 2015 Template by GraphBerry. More Templates <a href="http://www.cssmoban.com/" target="_blank" title="模板之家">模板之家</a> - Collect from <a href="http://www.cssmoban.com/" title="网页模板" target="_blank">网页模板</a></p>
+				</div>
+				<div class="col-md-4">
+					<ul class="social-icons">
+						<li><a href=""><i class="fa fa-facebook"></i></a></li>
+						<li><a href=""><i class="fa fa-twitter"></i></a></li>
+						<li><a href=""><i class="fa fa-dribbble"></i></a></li>
+						<li><a href=""><i class="fa fa-behance"></i></a></li>
+						<li><a href=""><i class="fa fa-pinterest"></i></a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<!-- Footer end  -->
+
+	<!-- Load jQuery -->
+	<script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
+	
+
+	<!-- Load Booststrap -->
+	<script type="text/javascript" src="js/bootstrap.js"></script>
+
+	<script type="text/javascript" src="js/smooth-scroll.js"></script>
+
+	<!-- Load custom js for theme -->
+	<script type="text/javascript" src="js/app.js"></script>
+	<script>
+	
+	$(document).ready(function () {
+		$(window).scroll(function(){
+   var sc=$(window).scrollTop();
+   var rwidth=$(window).width()
+   if(sc>0){
+    $("#goTopBtn").css("display","block");
+    $("#goTopBtn").css("left",(rwidth-36)+"px")
+   }else{
+   $("#goTopBtn").css("display","none");
+   }
+ })
+ $("#goTopBtn").click(function(){
+   var sc=$(window).scrollTop();
+   $('body,html').animate({scrollTop:0},500);
+ })
+	
+	});
+
+	var picTop = 0;
+        var advTop = 0;
+
+        function init() {
+            picTop = document.getElementById("advLayer").style.pixelTop;
+            advTop = document.getElementById("closeAdv").style.pixelTop;
+        }
+
+        function move() {
+
+            document.getElementById("advLayer").style.pixelTop = picTop + document.body.scrollTop;
+            document.getElementById("closeAdv").style.pixelTop = advTop + document.body.scrollTop;
+
+        }
+
+        function closeAdv() {
+            document.getElementById("advLayer").style.display = "none";
+            document.getElementById("closeAdv").style.display = "none";
+        }
+
+        window.onscroll = move; //窗口的滚动事件，当页面滚动时调用move( )函数
+	
+	</script>
+</body>
+</html>
