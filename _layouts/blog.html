@@ -1,0 +1,92 @@
+<!DOCTYPE HTML>
+<!--
+	Massively by HTML5 UP
+	html5up.net | @ajlkn
+  Jekyll integration by somiibo.com
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+    {% include head.html %}
+
+	</head>
+	<body class="is-loading">
+
+		<!-- Wrapper -->
+			<div id="wrapper" class="fade-in">
+
+				<!-- Header -->
+				<header id="header">
+					<a href="{{ "/" | absolute_url }}" class="logo">{{site.title}}</a>
+				</header>
+
+
+				<!-- Nav -->
+					<nav id="nav">
+
+            {% include nav.html %}
+
+			<ul class="icons">
+				<li><a href="https://space.bilibili.com/21205390#/" class="iconfont icon-bilibili1" rel="nofollow" target="view_window"><span class="label">Bilibili</span></a></li>
+                <li><a href="https://www.zhihu.com/people/index-52/activities" class="iconfont icon-zhihu" rel="nofollow" target="view_window"><span class="label">Bilibili</span></a></li>
+                <li><a href="http://music.163.com/#/djradio?id=340345069" class="iconfont icon-wangyiyun" rel="nofollow" target="view_window"><span class="label">Bilibili/span></a></li>
+                <li><a href="https://github.com/{{site.github}}" class="iconfont icon-github" rel="nofollow" target="view_window"><span class="label">GitHub</span></a></li>
+            </ul>
+		</nav>
+
+				<!-- Main -->
+				<div id="main">
+
+          <article class="post featured">
+            <header class="major">
+              <h2><a href="#">博客</a></h2>
+              <p>这里是我的博客，这里记录着我的生活，记录着我在学习新东西时碰到的困惑。</p>
+            </header>
+						<p>
+
+							<p>
+							</p>
+
+						</p>
+
+          </article>
+					<!-- Post -->
+					<section class="posts">
+						{% for post in site.posts %}
+						{% assign mod3 = forloop.index | modulo: 3 %}
+							<article>
+								<header>
+									<span class="date">{{ post.date | date_to_string }}</span>
+									<h2><a href="{{ post.url | absolute_url }}">{{ post.title }}</h2>
+								</header>
+								<a href="{{ post.url | absolute_url }}" class="image fit"><img src="{{ post.image | absolute_url }}" alt="" /></a>
+								<p style="text-align:center">{{ post.excerpt }}</p>
+								<ul class="actions">
+									<li><a href="{{ post.url | absolute_url }}" class="button">阅读全文</a></li>
+								</ul>
+							</article>
+							{% if mod3 == 0 %}
+							<article>
+								<header>
+									<h2><a href="#">Sponsored</h2>
+								</header>
+
+							</article>
+							{% endif %}
+						{% endfor %}
+
+					</section>
+
+					</div>
+
+				<!-- Footer -->
+        {% include foot.html %}
+
+			</div>
+
+			<!-- Scripts -->
+			{% include scripts-main.html %}
+			{% include tracking.html %}
+
+	</body>
+</html>

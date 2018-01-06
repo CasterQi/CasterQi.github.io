@@ -1,0 +1,61 @@
+<!DOCTYPE HTML>
+<!--
+	Massively by HTML5 UP
+	html5up.net | @ajlkn
+  Jekyll integration by somiibo.com
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+    {% include head.html %}
+	</head>
+	<body class="is-loading">
+
+		<!-- Wrapper -->
+			<div id="wrapper" class="fade-in">
+
+				<!-- Header -->
+				<header id="header">
+					<a href="{{ "/" | absolute_url }}" class="logo">{{site.title}}</a>
+				</header>
+
+				<!-- Nav -->
+					<nav id="nav">
+
+            {% include nav.html %}
+
+						<ul class="icons">
+				<li><a href="https://space.bilibili.com/21205390#/" class="iconfont icon-bilibili1" rel="nofollow" target="view_window"><span class="label">Bilibili</span></a></li>
+                <li><a href="https://www.zhihu.com/people/index-52/activities" class="iconfont icon-zhihu" rel="nofollow" target="view_window"><span class="label">Bilibili</span></a></li>
+                <li><a href="http://music.163.com/#/djradio?id=340345069" class="iconfont icon-wangyiyun" rel="nofollow" target="view_window"><span class="label">Bilibili/span></a></li>
+                <li><a href="https://github.com/{{site.github}}" class="iconfont icon-github" rel="nofollow" target="view_window"><span class="label">GitHub</span></a></li>
+                   	</ul>
+					</nav>
+
+				<!-- Main -->
+				<div id="main">
+
+					<!-- Post -->
+					<section class="post">
+						<p>{{content}}</p>
+					</section>
+
+					<!-- Footer -->
+						<footer>
+              <ul class="actions">
+								<li><a href="{{ "/blog/" | absolute_url }}" class="button">所有博客</a></li>
+              </ul>
+						</footer>
+					</div>
+
+				<!-- Footer -->
+        {% include foot.html %}
+
+			</div>
+
+			<!-- Scripts -->
+			{% include scripts-main.html %}
+			{% include tracking.html %}
+
+	</body>
+</html>
