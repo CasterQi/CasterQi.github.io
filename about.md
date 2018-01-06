@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Jekyll Theme - About - Massively
+title: 关于灵魂调音师
 description: When building a website it's helpful to see what the focus of your site is. This page is an example of how to show a website's focus.
 sitemap:
     priority: 0.7
