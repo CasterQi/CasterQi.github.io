@@ -1,6 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><?xml-stylesheet type="text/xml" href="/feed.xslt.xml"?><feed xmlns="http://www.w3.org/2005/Atom"><generator uri="http://jekyllrb.com" version="3.2.1">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2018-01-05T22:31:33+08:00</updated><id>/</id><title type="html">灵魂调音师</title><subtitle>灵魂调音师的个人小站</subtitle><entry><title type="html">秋末杂谈</title><link href="/blog/init11/" rel="alternate" type="text/html" title="秋末杂谈" /><published>2018-01-05T00:00:00+08:00</published><updated>2018-01-05T00:00:00+08:00</updated><id>/blog/init11</id><content type="html" xml:base="/blog/init11/">&lt;h1 id=&quot;2017秋末的杂谈&quot;&gt;2017秋末的杂谈&lt;/h1&gt;
-
-&lt;p&gt;-&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><?xml-stylesheet type="text/xml" href="/feed.xslt.xml"?><feed xmlns="http://www.w3.org/2005/Atom"><generator uri="http://jekyllrb.com" version="3.2.1">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2018-01-06T21:15:31+08:00</updated><id>/</id><title type="html">灵魂调音师</title><subtitle>灵魂调音师的个人小站</subtitle><entry><title type="html">秋末杂谈</title><link href="/blog/init11/" rel="alternate" type="text/html" title="秋末杂谈" /><published>2017-10-31T00:00:00+08:00</published><updated>2017-10-31T00:00:00+08:00</updated><id>/blog/init11</id><content type="html" xml:base="/blog/init11/">&lt;h1 id=&quot;2017秋末杂谈&quot;&gt;2017秋末杂谈&lt;/h1&gt;
 
 &lt;h2 id=&quot;上课的意义&quot;&gt;上课的意义？&lt;/h2&gt;
 
@@ -33,27 +31,7 @@
 &lt;h2 id=&quot;好学生与坏学生&quot;&gt;好学生与坏学生&lt;/h2&gt;
 
 &lt;p&gt;我虽然曾代表学院拿过国家级的奖项，但从从学院的角度来说我并不是什么好学生，我逃晨跑和晚修，我逃课，没做过一次志愿者活动。辅导员找我谈过，谈了一个多小时，但她怎么可能说服一个已经在高中束缚三年，现在怦然爆发的内心呢？
-对他们来说，什么是好学生，就是那种从来不逃课，不逃晨跑和晚修，积极参加志愿者活动的学生。
+我把自己视作目标驱动型，当有障碍挡在我的目标面前时，即使是学校，即使是所谓的规矩，所谓的社会正义，我也会义无反顾地击毁它。
+而对他们来说，什么是好学生，就是那种从来不逃课，不逃晨跑和晚修，积极参加志愿者活动的学生。
 但从我的角度看来他们两者恰恰完全相反。我逃课，逃晨跑和晚修是因为我知道什么事情更重要，或者更有意义。而有些看起来“好”的学生则是一回寝室就在王者荣耀或是守望先锋，更像是争抢奖学金的机器，在各种活动中都能看到他们的贪婪眼睛，完全忘了初心，或者他们从来没有过。
-而我在初三那年，在那台1.8Ghz速龙CPU、768M内存的老电脑上写下第一个hello word的apk的时候，到现在，从未忘记。&lt;/p&gt;
-
-&lt;p&gt;目标驱动型，当有障碍挡在我的目标面前时，即使是学校，即使是所谓的规矩，所谓的社会正义，我也会义无反顾地击毁它。（所谓的挂科根本无法影响我追逐梦想的行动）&lt;/p&gt;</content><summary type="html">秋末写下的杂文</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="/images/pic06.jpg" /></entry><entry><title type="html">Welcome to Massively: The Jekyll Theme!</title><link href="/blog/welcome-to-massively-the-jekyll-theme/" rel="alternate" type="text/html" title="Welcome to Massively: The Jekyll Theme!" /><published>2017-10-31T00:00:00+08:00</published><updated>2017-10-31T00:00:00+08:00</updated><id>/blog/welcome-to-massively-the-jekyll-theme</id><content type="html" xml:base="/blog/welcome-to-massively-the-jekyll-theme/">&lt;h2 id=&quot;how-to-use-this-theme&quot;&gt;How to Use This Theme&lt;/h2&gt;
-&lt;p&gt;Just go ahead and read up on &lt;a href=&quot;https://jekyllrb.com/&quot;&gt;how to install Jekyll&lt;/a&gt;. It’s not too hard I promise!&lt;/p&gt;
-
-&lt;p&gt;Download this repository &lt;a href=&quot;https://github.com/iwiedenm/jekyll-theme-massively&quot;&gt;here&lt;/a&gt; and save it to any folder you want.&lt;/p&gt;
-
-&lt;p&gt;Open a terminal window or a command line and &lt;code class=&quot;highlighter-rouge&quot;&gt;cd&lt;/code&gt; to that location.&lt;/p&gt;
-
-&lt;p&gt;Then enter: &lt;code class=&quot;highlighter-rouge&quot;&gt;bundle exec jekyll serve&lt;/code&gt;. You can now access your new Jekyll site from &lt;a href=&quot;http://127.0.0.1:4000/&quot;&gt;http://127.0.0.1:4000/&lt;/a&gt;. Have fun exploring your new site!&lt;/p&gt;
-
-&lt;h2 id=&quot;features&quot;&gt;Features&lt;/h2&gt;
-&lt;h3 id=&quot;auto-generating-sitemap&quot;&gt;Auto-Generating Sitemap&lt;/h3&gt;
-&lt;p&gt;The sitemap is auto generated! Just simply change the front matter of each site. It looks like so…&lt;/p&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sitemap:
-    priority: 0.7
-    lastmod: 2017-11-02
-    changefreq: weekly
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-&lt;h3 id=&quot;formspring-integration&quot;&gt;Formspring integration&lt;/h3&gt;
-&lt;p&gt;The contact form below each page on the footer actually collects information! Just change your email address in the &lt;code class=&quot;highlighter-rouge&quot;&gt;_config.yml&lt;/code&gt; file!&lt;/p&gt;</content><summary type="html">Huge thanks to HTML5 UP for making this awesome template! Let's see what it can do</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="/images/pic02.jpg" /></entry></feed>
+而我在初三那年，在那台1.8Ghz速龙CPU、768M内存的老电脑上写下第一个hello word的apk的时候，到现在，从未忘记。&lt;/p&gt;</content><summary type="html">秋末写下的杂文</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="/images/pic06.jpg" /></entry></feed>
