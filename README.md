@@ -2,6 +2,22 @@
 
 ### 这里是灵魂调音师'Blog的GitHub Pages仓库
 
+#####2018-1-6
+
+* 修复了移动端iconfont显示异常的bug
+
+
+
+##### 待完善的内容
+
+* 主页以及blog页面的简介
+
+
+
+
+
+###以下是GitHub自动生成的内容：
+
 You can use the [editor on GitHub](https://github.com/CasterQi/CasterQi.github.io/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
 
 Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
