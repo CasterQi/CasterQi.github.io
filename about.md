@@ -7,21 +7,97 @@ sitemap:
     lastmod: 2017-11-02
     changefreq: weekly
 ---
-## About our Site
+## 关于此站
 
 <span class="image left"><img src="{{ "/images/pic04.jpg" | absolute_url }}" alt="" /></span>
 
-Making steady content and conveying it well takes a great deal of research and, hence, time and exertion. Building a profound established comprehension of your target customer needs is critical as your principle objective ought to be to fulfill their requirements as awesome content. You should need to enhance their lives. Having significant content like this may not be simple by any methods. Be that as it may, in any case, it's a fundamental apparatus in the event that you expect to grow a fruitful and supportable business in the present web focused world.
+这是灵魂调音师的个人小站。我可能会偶尔来这儿，更新一下博文。但是记住，一直有一个孤高的灵魂呆在这呢！
+你可能会有一点儿吃惊，因为我创立此站的最初目的是‘炫技’。我是一个从事IT行业的人，在写下这段文字的时候。正是我大二的寒假。
+我观察到挺多IT的从业者都会有个个人博客之类的。这这是这个小站一开始出现的原因。但我呢又比较喜欢瞎写，于是这个网站所承载的就慢慢的不一样了。
+即便来到这儿的人会非常的少，但是我如果有一本所有人都能看到的日记本。即使没有人看我也就挺满意了。
+我觉得我可能是个挺复杂的人。如果你在这儿愿意听我啰嗦，那就接着看下去吧。
 
-Receiving the benefits of content is a certain something. Be that as it may, it's so substantially less demanding once you begin conveying all the more successfully. The profitable content thought isn't just about bragging your item's capacities and general worth or your organization's achievements. You should concentrate less on advertising how awesome your item is and rather concentrate on indicating how valuable it is. This is a client focused approach as it concentrates on their issues and your answer for them. Making yourself fundamental is critical.
+### 性格
 
-### Content is Imortant
-<div class="box">
+复杂从我的性格说起。其实我不太愿意说自己是个双重性格什么的。就像一个看起来挺正常的人说自己有抑郁症一样，让人感觉有‘装’的成分在里面。但事实上
+我确实有两种性格。但倒也没有上升到疾病如此严重。当我处在社会系统中时，我会显得比较活泼开朗，但是会比较‘天真’或者说‘幼稚’。但当我在独处时，就
+几乎是前者的反面。所以在此站上的所有文字都是我在后者这种性格中完成的。随着年龄的增大，我发现两种性格似乎在渐渐地‘愈合’。
+
+### 兴趣
+
+其实罕有人能看到我这么多的内心独白。哈哈～我认为我兴趣还是非常丰富的或者说非常复杂的。我尝试着举例一下，角度不同会有些许重复：
+
+1. 视频
+   1. 鬼畜视频
+     * 洛天依&葛平的Vocaloid
+     * 哲♂学
+   1. 二次加工的视频
+     * 电影混剪
+     * 延迟摄影
+   1. 影视
+     * 漫威
+     * 番剧
+1. 音乐
+   1. 听
+     * 纯音乐
+     * 女声 日系 小众 伤感
+   1. 奏
+     * 吉他
+   1. 写
+     * 尝试中：难点是记谱
+1. 科技
+   1. 科技圈
+     * 手机&电脑等数码评测
+     * 科技圈前沿
+   1. IT
+     * 安卓/iOS
+     * React Native
+     * Unity
+     * 博客：即是本站
+1. 社会&科学
+   1. 社科
+     * 大象工会（故事FM）
+     * 浪潮&槽值
+     * 知乎&简书
+     * 混乱博物馆
+     * 得到
+   1. 科学
+     * 细胞生物学、奇特生物
+     * 天体物理、量子物理
+     * 赛博朋克、《三体》
+1. 娱乐
+   1. 游戏
+     * 炉石传说
+     * 星际争霸
+     * 英雄联盟
+     * 纪念碑谷
+     * 地狱边境
+   1. 其他
+     * 听歌
+     * 电影
+
+<!-- 1. 人物
+   1. 社会
+     * 罗振宇
+     * 刘大可
+     * 押沙龙
+     * 混乱博物馆
+     * 得到
+   1. 科技
+     * 刘大可
+     * 王自如
+     * 罗永浩
+     * 雷军
+     * 那岩
+     * 乔布斯
+   1. 娱乐
+     * 王师傅（张鼎） -->
+
+### 待补充。。。
+
+<!-- <div class="box">
   <p>
-  In saying that, a one-measure fits-all approach won't do the trick with regards to content promoting. Rather, an emphasis on making remarkable, high caliber and totally genuine content that is engaging, helpful and fascinating for customers will get you the crown. From content, video and symbolism to infographics, studies, online courses and podcasts, whatever your favored content medium is, guarantee it is shareable and pertinent to your industry.
   </p>
-</div>
-
+</div> 
 <span class="image left"><img src="{{ "/images/pic05.jpg" | absolute_url }}" alt="" /></span>
-
-On social media, we may share our own thoughts and advance our image notwithstanding spreading musings for different associations and affiliations. With such a critical number of associations with people and relationship on social media, our experience can be over-burden with a considerable measure of information.
+-->

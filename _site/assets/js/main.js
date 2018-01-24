@@ -270,7 +270,9 @@
 
 //增加的修改
 
-	if($('canvas').hasClass('particles-js-canvas-el')){
+	//if($('canvas').hasClass('particles-js-canvas-el'))
+	if($('#intro').length>0)
+	{
 		particlesJS("particles-js", {
 			"particles": {
 				"number": {

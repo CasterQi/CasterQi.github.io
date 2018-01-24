@@ -1,7 +1,7 @@
 ---
 layout: blog
 title: 灵魂调音师的博客
-description: Every great website starts with a great homepage. The homepage tells your viewers what your site is all about and gives your viewers a place to come back to.
+description: 欢迎你能来这儿看望一个孤高的灵魂。
 sitemap:
     priority: 1.0
     lastmod: 2017-11-02
