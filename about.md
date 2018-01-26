@@ -13,6 +13,8 @@ sitemap:
 
 &emsp;&emsp;此站的页面访问服务由[GitHub Pages](https://pages.github.com/)提供，由[HTML5UP](https://html5up.net)提供视觉原始设计，博主基于此进行了修改，[腾讯云](https://cloud.tencent.com/)对象存储服务为本站提供了图片资源加速。博主再此表示对他们的感谢。
 
+### 关于
+
 <span class="image left"><img src="{{ "/images/pic04.jpg" | absolute_url }}" alt="" /></span>
 
 &emsp;&emsp;这是灵魂调音师的个人小站。我可能会偶尔来这儿，更新一下博文。但是记住，一直有一个孤高的灵魂呆在这呢！
