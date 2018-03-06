@@ -1,7 +1,7 @@
 ---
 layout: page
 title: 关于灵魂调音师
-description: When building a website it's helpful to see what the focus of your site is. This page is an example of how to show a website's focus.
+description: 欢迎你能来这儿看望一个孤高的灵魂。
 sitemap:
     priority: 0.7
     lastmod: 2017-11-02

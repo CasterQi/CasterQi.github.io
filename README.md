@@ -1,8 +1,14 @@
-## Welcome to GitHub Pages
+# Welcome to GitHub Pages
 
-### 这里是灵魂调音师'Blog的GitHub Pages仓库
+## 这里是灵魂调音师'Blog的GitHub Pages仓库
 
-#####2018-1-6
+##### 2018-3-6
+
+大幅改动，加入了新页面indieGame，并完成了博文《见缝插针》
+修复了博文的分类问题
+修复了nav导航的高亮问题：通过permalink属性强行指定url
+
+##### 2018-1-6
 
 * 修复了移动端iconfont显示异常的bug
 * bundle exec jekyll serve 启动本地serve
