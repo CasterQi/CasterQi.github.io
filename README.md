@@ -2,6 +2,10 @@
 
 ## 这里是灵魂调音师'Blog的GitHub Pages仓库
 
+##### jekyll
+
+启动jekyll服务器：bundle exec jekyll serve
+
 ##### 2018-3-6
 
 大幅改动，加入了新页面indieGame，并完成了博文《见缝插针》
