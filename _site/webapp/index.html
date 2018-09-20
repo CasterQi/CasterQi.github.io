@@ -1,0 +1,1195 @@
+<!doctype html>
+<html class="no-js">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+
+    <!--360 browser -->
+    <meta name="renderer" content="webkit">
+    <meta name="author" content="wos">
+    <!-- Android -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <link rel="icon" sizes="192x192" href="images/i/app.png">
+    <!--Safari on iOS -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="Amaze UI"/>
+    <link rel="apple-touch-icon-precomposed" href="images/i/app.png">
+    <!--Win8 or 10 -->
+    <meta name="msapplication-TileImage" content="images/i/app.png">
+    <meta name="msapplication-TileColor" content="#e1652f">
+
+    <link rel="icon" type="image/png" href="images/i/favicon.png">
+    <link rel="stylesheet" href="assets/css/amazeui.css">
+    <link rel="stylesheet" href="css/public.css">
+    <link rel="stylesheet" href="assets/css/app.css"
+
+    <!--[if (gte IE 9)|!(IE)]><!-->
+    <script src="assets/js/jquery.min.js"></script>
+    <!--<![endif]-->
+    <!--[if lte IE 8 ]>
+    <script src="http://libs.baidu.com/jquery/1.11.3/jquery.min.js"></script>
+    <script src="http://cdn.staticfile.org/modernizr/2.8.3/modernizr.js"></script>
+    <script src="assets/js/amazeui.ie8polyfill.min.js"></script>
+    <![endif]-->
+    
+    <script src="assets/js/amazeui.min.js"></script>
+    <script src="js/public.js"></script>
+    <script src="js/getip.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios@0.12.0/dist/axios.min.js"></script>
+    <!-- <script>
+    $(function () {
+            $('#ip_display').text(await getYourIP())
+        });
+        </script> -->
+        <style>
+           #switch{
+                background-color: rgba(0,0,0,0.05);
+                color:black;
+                font-size: 1.2rem;
+                height: 26px
+                /* text-align: center; */
+                
+            } 
+        
+        </style>
+        <!-- <script>
+            $(function() {
+  var $form = $('#form-with-tooltip');
+  var $tooltip = $('<div id="vld-tooltip">请输入正确的IP地址</div>');
+  $tooltip.appendTo(document.body);
+
+  $form.validator();
+
+  var validator = $form.data('amui.validator');
+
+  $form.on('focusin focusout', '.am-form-error input', function(e) {
+    if (e.type === 'focusin') {
+      var $this = $(this);
+      var offset = $this.offset();
+      var msg = $this.data('foolishMsg') || validator.getValidationMessage($this.data('validity'));
+
+      $tooltip.text(msg).show().css({
+        left: offset.left + 60,
+        top: offset.top + $(this).outerHeight() + 10
+        
+      });
+      setTimeout($tooltip.hide,3000)
+    } else {
+      $tooltip.hide();
+    }
+  });
+});
+        
+        </script> -->
+        
+</head>
+<body>
+
+<header class="am-topbar am-topbar-fixed-top wos-header">
+    <div class="am-container">
+        <h1 class="am-topbar-brand">
+            <a href="#"><img src="images/logo.png" alt=""></a>
+        </h1>
+
+        <button class="am-topbar-btn am-topbar-toggle am-btn am-btn-sm am-btn-warning am-show-sm-only"
+                data-am-collapse="{target: '#collapse-head'}">
+            <span class="am-sr-only">导航切换</span>
+            <span class="am-icon-bars"></span>
+        </button>
+
+        <div class="am-collapse am-topbar-collapse" id="collapse-head">
+            <ul class="am-nav am-nav-pills am-topbar-nav">
+                <li class="am-active"><a href="#">首页</a></li>
+                <li><a href="zixun.html">设置</a></li>
+                <!-- <li><a href="category.html">专栏</a></li>
+                <li class="am-dropdown" data-am-dropdown>
+                    <a class="am-dropdown-toggle" data-am-dropdown-toggle href="javascript:;">
+                        案例 <span class="am-icon-caret-down"></span>
+                    </a>
+                    <ul class="am-dropdown-content">
+                        <li class="am-dropdown-header">案例</li>
+                        <li><a href="#">1. 游戏案例</a></li>
+                        <li><a href="#">2. 营销案例</a></li>
+                        <li><a href="#">3. 工具案例</a></li>
+                        <li><a href="cases.html">4. 全部案例</a></li>
+                    </ul>
+                </li>
+                <li><a href="profile.html">评测</a></li>
+                <li><a href="events.html">活动</a></li> -->
+            </ul>
+
+            <div class="am-topbar-right">
+                <button class="am-btn am-btn-default am-topbar-btn am-btn-sm"><span class="am-icon-pencil"></span>注册</button>
+            </div>
+
+            <div class="am-topbar-right">
+                <button class="am-btn am-btn-danger am-topbar-btn am-btn-sm"><span class="am-icon-user"></span> 登录</button>
+            </div>
+        </div>
+    </div>
+</header>
+<!--banner-->
+<div class="banner">
+    <div class="am-g am-container">
+        <div class="am-u-sm-12 am-u-md-12 am-u-lg-8">
+            <div data-am-widget="slider" class="am-slider am-slider-c1" data-am-slider='{"directionNav":false}' >
+                <ul class="am-slides">
+                    <li>
+                        <a href="#"><img src="Temp-images/bb1.jpg"></a>
+                        <!-- <div class="am-slider-desc">远方 有一个地方 那里种有我们的梦想</div> -->
+
+                    </li>
+                    <li>
+                        <a href="#"><img src="Temp-images/bb2.jpg"></a>
+                        <div class="am-slider-desc">The first step is as good as half over.</div>
+
+                    </li>
+                    <li>
+                        <a href="#"><img src="Temp-images/bb3.jpg"></a>
+                        <div class="am-slider-desc">You never know your luck.</div>
+
+                    </li>
+                    <li>
+                        <a href="#"><img src="Temp-images/bb4.jpg"></a>
+                        <div class="am-slider-desc">Sow nothing, reap nothing.</div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="am-u-sm-0 am-u-md-0 am-u-lg-4 padding-none">
+            <div class="star am-container"><span><img src="images/star.png">开关控制</span></div>
+            <ul id='switchList' class="padding-none am-gallery am-avg-sm-2 am-avg-md-4 am-avg-lg-2 am-gallery-overlay" data-am-gallery="{ pureview: true }" >
+                <li>
+                    <div class="am-gallery-item">
+                        <a  href="#" @click='switchClick(1)' >
+                            <img src="Temp-images/Switch_off.jpg"  alt="远方 有一个地方 那里种有我们的梦想"/>
+                            <h3 id = 'switch' class="am-gallery-title">换气</h3>
+                            <div class="am-gallery-desc">2375-09-26</div>
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <div class="am-gallery-item">
+                        <a href="#" @click='switchClick(2)'>
+                            <img src="Temp-images/Switch_off.jpg"  alt="远方 有一个地方 那里种有我们的梦想"/>
+                            <h3 id = 'switch'class="am-gallery-title">通风</h3>
+                            <div class="am-gallery-desc">2375-09-26</div>
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <div class="am-gallery-item">
+                        <a href="#" @click='switchClick(3)'>
+                            <img src="Temp-images/Switch_off.jpg"  alt="远方 有一个地方 那里种有我们的梦想"/>
+                            <h3 id = 'switch' class="am-gallery-title">照明</h3>
+                            <div class="am-gallery-desc">2375-09-26</div>
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <div class="am-gallery-item">
+                        <a href="#" @click='switchClick(4)'>
+                            <img src="Temp-images/Switch_off.jpg"  alt="远方 有一个地方 那里种有我们的梦想"/>
+                            <h3 id = 'switch' class="am-gallery-title">加热</h3>
+                            <div class="am-gallery-desc">2375-09-26</div>
+                        </a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="star am-container"><span><img src="images/star.png">参数设定</span></div>
+<section data-am-widget="accordion" class="am-accordion am-accordion-default" data-am-accordion='{ "multiple": true }'>
+    <dl class="am-accordion-item am-active">
+        <dt class="am-accordion-title" >
+            本机IP地址：
+        </dt>
+        <dd class="am-accordion-bd am-collapse am-in">
+            <!-- 规避 Collapase 处理有 padding 的折叠内容计算计算有误问题， 加一个容器 -->
+            <div>
+                <span id='ip_display' style="margin: 10px">
+                       {{ip_}}
+                </span>
+                    
+
+            </div>
+        </dd>
+    </dl>
+    <dl class="am-accordion-item ">
+        <dt class="am-accordion-title">
+            手动设置IP地址
+        </dt>
+        <dd class="am-accordion-bd am-collapse">
+            <!-- 规避 Collapase 处理有 padding 的折叠内容计算计算有误问题， 加一个容器 -->
+            <div>
+
+                <!-- <form class="am-form">
+                    <fieldset>
+                        <legend>手动设置IP地址</legend>
+
+                        <div class="am-form-group">
+                            <label for="doc-vld-name-2">请输入IP地址</label>
+                            <input type="text" class="" id="doc-vld-name-2" placeholder="输入电子邮件">
+                        </div>
+
+                       
+
+                        <p><button type="submit" class="am-btn am-btn-default">提交</button></p>
+                    </fieldset>
+                </form> -->
+                <div id='app2'>
+                <form  class="am-form" id="form-with-tooltip" v-on:submit='ipSubmit' onsubmit="return false">
+                        <fieldset >
+                          <!-- <legend>手动设置IP地址</legend> -->
+                          <div  class="am-form-group">
+                            <label for="doc-vld-name-2-0">请按正确的格式输入IP地址</label>
+                            <input 
+                                   v-model='inputip' 
+                                   type="text" id="doc-vld-name-2-0" 
+                                   placeholder="内网IP以192.168开头" required                                  
+                                   pattern="((?:(?:25[0-5]|2[0-4]\d|((1\d{2})|([1-9]?\d)))\.){3}(?:25[0-5]|2[0-4]\d|((1\d{2})|([1-9]?\d))):{0,1}\d{0,5})"
+                                   data-foolish-msg="请输入正确的IP地址"
+                                   data-validation-message="自定义提示信息：输入地球上的电子邮箱撒"
+                                   />
+                                    <div style="font-size: 1.3rem">
+                                            <p v-if='seen' >这是您第一次设置IP地址，或者之前的设置因浏览器缓存清除而丢失。</p>
+                                            <p v-if='seen2'>这个浏览器的Cookie功能貌似被禁用了，IP地址可能无法保存。</p>
+                                            <p>设置的IP地址将使用Cookie自动保存并填入，请确保您的浏览器没有禁用Cookie。</p>
+                                    </div>
+                                   
+                          </div>
+                      
+                          <!-- <div class="am-form-group">                         
+                            <label for="doc-vld-pwd-1-0">密码：</label>
+                            <input type="password" id="doc-vld-pwd-1-0" placeholder="6 位数字的银行卡密码" pattern="^\d{6}$" required data-foolish-msg="把 IQ 卡密码交出来！"/>
+                          </div> 
+                                   pattern="((?:(?:25[0-5]|2[0-4]\d|((1\d{2})|([1-9]?\d)))\.){3}(?:25[0-5]|2[0-4]\d|((1\d{2})|([1-9]?\d))))"
+
+                        /^(25[0-5]|2[0-4][0-9]|[0-1]{1}[0-9]{2}|[1-9]{1}[0-9]{1}|[1-9])\.(25[0-5]|2[0-4][0-9]|[0-1]{1}[0-9]{2}|[1-9]{1}[0-9]{1}|[1-9]|0)\.(25[0-5]|2[0-4][0-9]|[0-1]{1}[0-9]{2}|[1-9]{1}[0-9]{1}|[1-9]|0)\.(25[0-5]|2[0-4][0-9]|[0-1]{1}[0-9]{2}|[1-9]{1}[0-9]{1}|[0-9]):{0,1}\d{0,5}$/
+                        -->
+                      
+                          <button class="am-btn am-btn-secondary">{{text}}</button>
+                          <!-- v-on:click.capture="ipSubmit" -->
+                          
+                        </fieldset>
+                    </from>
+                    </div> 
+                      <style>
+                        #vld-tooltip {
+                          position: absolute;
+                          z-index: 1000;
+                          padding: 5px 10px;
+                          background: #F37B1D;
+                          min-width: 150px;
+                          color: #fff;
+                          transition: all 0.15s;
+                          box-shadow: 0 0 5px rgba(0,0,0,.15);
+                          display: none;
+                        }
+                      
+                        #vld-tooltip:before {
+                          position: absolute;
+                          top: -8px;
+                          left: 50%;
+                          width: 0;
+                          height: 0;
+                          margin-left: -8px;
+                          content: "";
+                          border-width: 0 8px 8px;
+                          border-color: transparent transparent #F37B1D;
+                          border-style: none inset solid;
+                        }
+                      </style>
+            </div>
+        </dd>
+    </dl>
+</section>
+<script>
+
+function setCookie(cname,cvalue,exdays){
+	var d = new Date();
+	d.setTime(d.getTime()+(exdays*24*60*60*1000));
+	var expires = "expires="+d.toGMTString();
+	document.cookie = cname+"="+cvalue+"; "+expires+'path=/';
+}
+function getCookie(cname){
+	var name = cname + "=";
+	var ca = document.cookie.split(';');
+	for(var i=0; i<ca.length; i++) {
+		var c = ca[i].trim();
+		if (c.indexOf(name)==0) { return c.substring(name.length,c.length); }
+	}
+	return "";
+}
+
+// function checkCookie(){
+// 	var user=getCookie("username");
+// 	if (user!=""){
+// 		alert("欢迎 " + user + " 再次访问");
+// 	}
+// 	else {
+// 		user = prompt("请输入你的名字:","");
+//   		if (user!="" && user!=null){
+//     		setCookie("username",user,30);
+//     	}
+// 	}
+// }
+
+var app = new Vue({
+  el: '#ip_display',
+  data: {
+    ip_: '正在获取'
+  }
+})
+    
+    getIPs((ip)=>{console.log(ip);app.ip_=ip});
+var switchList = new Vue({
+    el: '#switchList',
+    data:{
+        url1:'a',
+        
+    },
+    methods:{
+        switchClick:(id)=>{
+            console.log(id)
+            var ip=this.app2.inputip;
+            console.log(ip)
+            if((ip=='192.168.')||(ip=="")){
+                alert('您尚未设置IP地址')
+                
+            }
+            else{
+                var a = ""
+                var b = 'http://' + ip + '/switch?id=' + id
+                axios.get(b)
+                    .then(function (response) {
+                        a = _.capitalize(response.data)
+                    })
+                    .catch(function (error) {
+                        a = '错误！API 无法处理。' + error
+                    })
+                alert('访问地址：'+b+'\n未经处理的response返回：'+a)
+            }
+            }
+         
+    }
+})
+
+var app2 = new Vue({
+    el: "#app2",
+    data:{
+        
+        text:'提交',
+        inputip:'192.168.',
+        seen:false,
+        seen2:false,
+    },
+    mounted() {
+        // this.checkCookie()
+    },
+    methods:{
+        ipSubmit: ()=>{
+            console.log(this.app2.inputip)
+            
+            //document.cookie='inputip='+this.inputip
+            setCookie('inputip',this.app2.inputip,500)
+            
+            //checkCookie()
+            
+            console.log(window.navigator.cookieEnabled)
+            console.log(document.cookie)
+            this.app2.text='设置已保存'
+            setTimeout(()=>{this.app2.text='提交'},3000)
+            return false
+        },
+        checkCookie: ()=>{
+            console.log(window.navigator.cookieEnabled)
+            this.app2.seen2=!window.navigator.cookieEnabled
+            var ip=getCookie("inputip");
+            if (ip!=""){
+                // alert("欢迎 " + user + " 再次访问");
+                this.app2.inputip=ip
+                console.log(this.app2.inputip)
+                console.log(ip)
+            }
+            else {
+                this.app2.seen=true
+                //alert('s')
+                console.log('没有读取到Cookie')
+                // user = prompt("请输入你的名字:","");
+                // if (user!="" && user!=null){
+                // 	setCookie("username",user,30);
+                // }
+            }
+        }
+    }
+})
+
+this.app2.checkCookie()
+
+</script>
+<!-- <script>
+    //get the IP addresses associated with an account
+function getIPs(callback){
+var ip_dups = {};
+//compatibility for firefox and chrome
+var RTCPeerConnection = window.RTCPeerConnection
+|| window.mozRTCPeerConnection
+|| window.webkitRTCPeerConnection;
+//bypass naive webrtc blocking
+
+var iframe = document.createElement('iframe');
+//invalidate content script
+//iframe.sandbox = 'allow-same-origin';
+iframe.style.display = 'none';
+document.body.appendChild(iframe);
+var win = iframe.contentWindow;
+window.RTCPeerConnection = win.RTCPeerConnection;
+window.mozRTCPeerConnection = win.mozRTCPeerConnection;
+window.webkitRTCPeerConnection = win.webkitRTCPeerConnection;
+RTCPeerConnection = window.RTCPeerConnection
+|| window.mozRTCPeerConnection
+|| window.webkitRTCPeerConnection;
+
+//minimal requirements for data connection
+var mediaConstraints = {
+optional: [{RtpDataChannels: true}] };
+//firefox already has a default stun server in about:config
+//media.peerconnection.default_iceservers =
+//[{'url': 'stun:stun.services.mozilla.com'}] 
+var servers = undefined;
+//add same stun server for chrome
+if(window.webkitRTCPeerConnection)
+ servers = {iceServers: [{urls: 'stun:stun.services.mozilla.com'}]};
+//construct a new RTCPeerConnection
+var pc = new RTCPeerConnection(servers, mediaConstraints);
+//listen for candidate events
+pc.onicecandidate = function(ice){
+//skip non-candidate events
+if(ice.candidate){
+//match just the IP address
+var ip_regex = /([0-9]{1,3}(\.[0-9]{1,3}){3})/
+var ip_addr = ip_regex.exec(ice.candidate.candidate)[1];
+//remove duplicates
+if(ip_dups[ip_addr] === undefined)
+callback(ip_addr);
+ip_dups[ip_addr] = true;
+}
+alert(ip_addr)
+};
+
+//create a bogus data channel
+pc.createDataChannel("");
+//create an offer sdp
+pc.createOffer(function(result){
+//trigger the stun server request
+pc.setLocalDescription(result, function(){}, function(){});
+}, function(){});
+
+}
+//Test: Print the IP addresses into the console
+//getIPs(function(ip){console.log(ip);});
+getIPs(function(ip){alert("本机IP地址为:"+ip);});
+alert('s')
+</script> -->
+
+<!--banner2-->
+<!-- <div class="am-container">
+    <ul class="padding-none banner2 am-gallery am-avg-sm-2 am-avg-md-4 am-avg-lg-4 am-gallery-overlay" data-am-gallery="{ pureview: true }" >
+        <li>
+            <div class="am-gallery-item">
+                <a href="news.html">
+                    <img src="Temp-images/tempnews.png"  alt="远方 有一个地方 那里种有我们的梦想"/>
+                    <h3 class="am-gallery-title">远方 有一个地方 那里种有我们的梦想</h3>
+                    <div class="am-gallery-desc">2375-09-26</div>
+                </a>
+            </div>
+        </li>
+        <li>
+            <div class="am-gallery-item">
+                <a href="#">
+                    <img src="Temp-images/tempnews.png"  alt="远方 有一个地方 那里种有我们的梦想"/>
+                    <h3 class="am-gallery-title">远方 有一个地方 那里种有我们的梦想</h3>
+                    <div class="am-gallery-desc">2375-09-26</div>
+                </a>
+            </div>
+        </li>
+        <li>
+            <div class="am-gallery-item">
+                <a href="#">
+                    <img src="Temp-images/tempnews.png"  alt="远方 有一个地方 那里种有我们的梦想"/>
+                    <h3 class="am-gallery-title">远方 有一个地方 那里种有我们的梦想</h3>
+                    <div class="am-gallery-desc">2375-09-26</div>
+                </a>
+            </div>
+        </li>
+        <li>
+            <div class="am-gallery-item">
+                <a href="#">
+                    <img src="Temp-images/tempnews.png"  alt="远方 有一个地方 那里种有我们的梦想"/>
+                    <h3 class="am-gallery-title">远方 有一个地方 那里种有我们的梦想</h3>
+                    <div class="am-gallery-desc">2375-09-26</div>
+                </a>
+            </div>
+        </li>
+    </ul>
+</div> -->
+
+
+
+
+<!--news-->
+<!-- <div class="am-g am-container newatype">
+    <div class="am-u-sm-12 am-u-md-12 am-u-lg-8 oh">
+        <div data-am-widget="titlebar" class="am-titlebar am-titlebar-default" style="border-bottom: 0px; margin-bottom: -10px">
+            <h2 class="am-titlebar-title ">
+                热门资讯
+            </h2>
+            <nav class="am-titlebar-nav">
+                <a href="#more">more &raquo;</a>
+            </nav>
+        </div>
+
+        <div data-am-widget="list_news" class="am-list-news am-list-news-default news">
+            <div class="am-list-news-bd">
+                <ul class="am-list">
+                    <li class="am-g am-list-item-desced am-list-item-thumbed am-list-item-thumb-left" data-am-scrollspy="{animation:'fade'}">
+                        <div class="am-u-sm-5 am-list-thumb">
+                            <a href="http://www.douban.com/online/11624755/">
+                                <img src="Temp-images/b2.jpg" alt="我最喜欢的一张画"/>
+                            </a>
+
+                        </div>
+
+                        <div class=" am-u-sm-7 am-list-main">
+                            <h3 class="am-list-item-hd"><a href="http://www.douban.com/online/11624755/">我最喜欢的一张画</a></h3>
+                            <div class="am-list-item-text">你最喜欢的艺术作品，告诉大家它们的------名图画，色彩，交织，撞色，线条雕塑装置当代古代现代作品的照片美我最喜欢的画群296795413进群发画，少说多发图，</div>
+                        </div>
+
+                    </li>
+                    <div class="newsico am-fr">
+                        <i class="am-icon-clock-o">2016/11/11</i>
+                        <i class="am-icon-hand-pointer-o">12322</i>
+                    </div>
+
+
+                    <li class="am-g am-list-item-desced am-list-item-thumbed am-list-item-thumb-left" data-am-scrollspy="{animation:'fade'}">
+                        <div class="am-u-sm-5 am-list-thumb">
+                            <a href="http://www.douban.com/online/11624755/">
+                                <img src="Temp-images/b2.jpg" alt="我最喜欢的一张画"/>
+                            </a>
+                        </div>
+
+                        <div class=" am-u-sm-7 am-list-main">
+                            <h3 class="am-list-item-hd"><a href="http://www.douban.com/online/11624755/">我最喜欢的一张画</a></h3>
+
+                            <div class="am-list-item-text">你最喜欢的艺术作品，告诉大家它们的------名图画，色彩，交织，撞色，线条雕塑装置当代古代现代作品的照片美我最喜欢的画群296795413进群发画，少说多发图，</div>
+
+                        </div>
+                    </li>
+
+                    <li class="am-g am-list-item-desced am-list-item-thumbed am-list-item-thumb-left" data-am-scrollspy="{animation:'fade'}">
+                        <div class="am-u-sm-5 am-list-thumb">
+                            <a href="http://www.douban.com/online/11624755/">
+                                <img src="Temp-images/b2.jpg" alt="我最喜欢的一张画"/>
+                            </a>
+                        </div>
+
+                        <div class=" am-u-sm-7 am-list-main">
+                            <h3 class="am-list-item-hd"><a href="http://www.douban.com/online/11624755/">我最喜欢的一张画</a></h3>
+
+                            <div class="am-list-item-text">你最喜欢的艺术作品，告诉大家它们的------名图画，色彩，交织，撞色，线条雕塑装置当代古代现代作品的照片美我最喜欢的画群296795413进群发画，少说多发图，</div>
+
+                        </div>
+                    </li>
+
+                    <li class="am-g am-list-item-desced am-list-item-thumbed am-list-item-thumb-left" data-am-scrollspy="{animation:'fade'}">
+                        <div class="am-u-sm-7 am-list-thumb">
+                            <a href="http://www.douban.com/online/11624755/">
+                                <img src="Temp-images/b2.jpg" alt="我最喜欢的一张画"/>
+                            </a>
+                        </div>
+
+                        <div class=" am-u-sm-5 am-list-main">
+                            <h3 class="am-list-item-hd"><a href="http://www.douban.com/online/11624755/">我最喜欢的一张画</a></h3>
+
+                            <div class="am-list-item-text">你最喜欢的艺术作品，告诉大家它们的------名图画，色彩，交织，撞色，线条雕塑装置当代古代现代作品的照片美我最喜欢的画群296795413进群发画，少说多发图，</div>
+
+                        </div>
+                    </li>
+
+                    <li class="am-g am-list-item-desced am-list-item-thumbed am-list-item-thumb-left" data-am-scrollspy="{animation:'fade'}">
+                        <div class="am-u-sm-5 am-list-thumb">
+                            <a href="http://www.douban.com/online/11624755/">
+                                <img src="Temp-images/b2.jpg" alt="我最喜欢的一张画"/>
+                            </a>
+                        </div>
+
+                        <div class=" am-u-sm-7 am-list-main">
+                            <h3 class="am-list-item-hd"><a href="http://www.douban.com/online/11624755/">我最喜欢的一张画</a></h3>
+
+                            <div class="am-list-item-text">你最喜欢的艺术作品，告诉大家它们的------名图画，色彩，交织，撞色，线条雕塑装置当代古代现代作品的照片美我最喜欢的画群296795413进群发画，少说多发图，</div>
+
+                        </div>
+                    </li>
+
+                    <li class="am-g am-list-item-desced am-list-item-thumbed am-list-item-thumb-left" data-am-scrollspy="{animation:'fade'}">
+                        <div class="am-u-sm-5 am-list-thumb">
+                            <a href="http://www.douban.com/online/11624755/">
+                                <img src="Temp-images/b2.jpg" alt="我最喜欢的一张画"/>
+                            </a>
+                        </div>
+
+                        <div class=" am-u-sm-7 am-list-main">
+                            <h3 class="am-list-item-hd"><a href="http://www.douban.com/online/11624755/">我最喜欢的一张画</a></h3>
+
+                            <div class="am-list-item-text">你最喜欢的艺术作品，告诉大家它们的------名图画，色彩，交织，撞色，线条雕塑装置当代古代现代作品的照片美我最喜欢的画群296795413进群发画，少说多发图，</div>
+
+                        </div>
+                    </li>
+
+                    <li class="am-g am-list-item-desced am-list-item-thumbed am-list-item-thumb-left" data-am-scrollspy="{animation:'fade'}">
+                        <div class="am-u-sm-5 am-list-thumb">
+                            <a href="http://www.douban.com/online/11624755/">
+                                <img src="Temp-images/b2.jpg" alt="我最喜欢的一张画"/>
+                            </a>
+                        </div>
+
+                        <div class=" am-u-sm-7 am-list-main">
+                            <h3 class="am-list-item-hd"><a href="http://www.douban.com/online/11624755/">我最喜欢的一张画</a></h3>
+
+                            <div class="am-list-item-text">你最喜欢的艺术作品，告诉大家它们的------名图画，色彩，交织，撞色，线条雕塑装置当代古代现代作品的照片美我最喜欢的画群296795413进群发画，少说多发图，</div>
+
+                        </div>
+                    </li>
+
+                    <li class="am-g am-list-item-desced am-list-item-thumbed am-list-item-thumb-left" data-am-scrollspy="{animation:'fade'}">
+                        <div class="am-u-sm-5 am-list-thumb">
+                            <a href="http://www.douban.com/online/11624755/">
+                                <img src="Temp-images/b2.jpg" alt="我最喜欢的一张画"/>
+                            </a>
+                        </div>
+
+                        <div class=" am-u-sm-7 am-list-main">
+                            <h3 class="am-list-item-hd"><a href="http://www.douban.com/online/11624755/">我最喜欢的一张画</a></h3>
+
+                            <div class="am-list-item-text">你最喜欢的艺术作品，告诉大家它们的------名图画，色彩，交织，撞色，线条雕塑装置当代古代现代作品的照片美我最喜欢的画群296795413进群发画，少说多发图，</div>
+
+                        </div>
+                    </li>
+
+
+                </ul>
+            </div>
+            <a href="#"><img src="Temp-images/ad2.png" class="am-img-responsive" width="100%"/></a>
+
+            <div class="am-hide-sm">
+                <div data-am-widget="titlebar" class="am-titlebar am-titlebar-default">
+                    <h2 class="am-titlebar-title ">
+                        热门资讯
+                    </h2>
+                    <nav class="am-titlebar-nav">
+                        <a href="#more" onclick="$('.case').hide();$('#youxi').show();">游戏案例</a>
+                        <a href="#more" onclick="$('.case').hide();$('#yingxiao').show();">营销案例</a>
+                        <a href="#more" onclick="$('.case').hide();$('#gongju').show();">工具案例</a>
+                    </nav>
+                </div>
+
+
+                <div id="youxi" class="case am-animation-slide-left">
+                    <ul class="am-gallery am-avg-sm-2 am-avg-md-4 am-avg-lg-4 am-gallery-overlay" data-am-gallery="{ pureview: true }" >
+                        <li>
+                            <div class="am-gallery-item">
+                                <a href="Temp-images/dd.jpg">
+                                    <img src="Temp-images/cc.jpg" data-replace-img="Temp-images/dd.jpg" alt="远方 有一个地方 那里种有我们的梦想"/>
+                                    <h3 class="am-gallery-title">远方 有一个地方 那里种有我们的梦想</h3>
+                                    <div class="am-gallery-desc">2375-09-26</div>
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="am-gallery-item">
+                                <a href="Temp-images/dd.jpg">
+                                    <img src="Temp-images/cc.jpg" data-replace-img="Temp-images/dd.jpg" alt="远方 有一个地方 那里种有我们的梦想"/>
+                                    <h3 class="am-gallery-title">远方 有一个地方 那里种有我们的梦想</h3>
+                                    <div class="am-gallery-desc">2375-09-26</div>
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="am-gallery-item">
+                                <a href="Temp-images/dd.jpg">
+                                    <img src="Temp-images/cc.jpg" data-replace-img="Temp-images/dd.jpg" alt="远方 有一个地方 那里种有我们的梦想"/>
+                                    <h3 class="am-gallery-title">远方 有一个地方 那里种有我们的梦想</h3>
+                                    <div class="am-gallery-desc">2375-09-26</div>
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="am-gallery-item">
+                                <a href="Temp-images/dd.jpg">
+                                    <img src="Temp-images/cc.jpg" data-replace-img="Temp-images/dd.jpg" alt="远方 有一个地方 那里种有我们的梦想"/>
+                                    <h3 class="am-gallery-title">远方 有一个地方 那里种有我们的梦想</h3>
+                                    <div class="am-gallery-desc">2375-09-26</div>
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="am-gallery-item">
+                                <a href="Temp-images/dd.jpg">
+                                    <img src="Temp-images/cc.jpg" data-replace-img="Temp-images/dd.jpg" alt="远方 有一个地方 那里种有我们的梦想"/>
+                                    <h3 class="am-gallery-title">远方 有一个地方 那里种有我们的梦想</h3>
+                                    <div class="am-gallery-desc">2375-09-26</div>
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="am-gallery-item">
+                                <a href="Temp-images/dd.jpg">
+                                    <img src="Temp-images/cc.jpg" data-replace-img="Temp-images/dd.jpg" alt="远方 有一个地方 那里种有我们的梦想"/>
+                                    <h3 class="am-gallery-title">远方 有一个地方 那里种有我们的梦想</h3>
+                                    <div class="am-gallery-desc">2375-09-26</div>
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="am-gallery-item">
+                                <a href="Temp-images/dd.jpg">
+                                    <img src="Temp-images/cc.jpg" data-replace-img="Temp-images/dd.jpg" alt="远方 有一个地方 那里种有我们的梦想"/>
+                                    <h3 class="am-gallery-title">远方 有一个地方 那里种有我们的梦想</h3>
+                                    <div class="am-gallery-desc">2375-09-26</div>
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="am-gallery-item">
+                                <a href="Temp-images/dd.jpg">
+                                    <img src="Temp-images/cc.jpg" data-replace-img="Temp-images/dd.jpg" alt="远方 有一个地方 那里种有我们的梦想"/>
+                                    <h3 class="am-gallery-title">远方 有一个地方 那里种有我们的梦想</h3>
+                                    <div class="am-gallery-desc">2375-09-26</div>
+                                </a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <div id="yingxiao" class="case am-animation-slide-right dn">
+                    <ul class="am-gallery am-avg-sm-2 am-avg-md-4 am-avg-lg-4 am-gallery-overlay" data-am-gallery="{ pureview: true }" >
+                        <li>
+                            <div class="am-gallery-item">
+                                <a href="Temp-images/dd.jpg">
+                                    <img src="Temp-images/cc.jpg" data-replace-img="Temp-images/dd.jpg" alt="远方 有一个地方 那里种有我们的梦想"/>
+                                    <h3 class="am-gallery-title">远方 有一个地方 那里种有我们的梦想</h3>
+                                    <div class="am-gallery-desc">2375-09-26</div>
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="am-gallery-item">
+                                <a href="Temp-images/dd.jpg">
+                                    <img src="Temp-images/cc.jpg" data-replace-img="Temp-images/dd.jpg" alt="远方 有一个地方 那里种有我们的梦想"/>
+                                    <h3 class="am-gallery-title">远方 有一个地方 那里种有我们的梦想</h3>
+                                    <div class="am-gallery-desc">2375-09-26</div>
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="am-gallery-item">
+                                <a href="Temp-images/dd.jpg">
+                                    <img src="Temp-images/cc.jpg" data-replace-img="Temp-images/dd.jpg" alt="远方 有一个地方 那里种有我们的梦想"/>
+                                    <h3 class="am-gallery-title">远方 有一个地方 那里种有我们的梦想</h3>
+                                    <div class="am-gallery-desc">2375-09-26</div>
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="am-gallery-item">
+                                <a href="Temp-images/dd.jpg">
+                                    <img src="Temp-images/cc.jpg" data-replace-img="Temp-images/dd.jpg" alt="远方 有一个地方 那里种有我们的梦想"/>
+                                    <h3 class="am-gallery-title">远方 有一个地方 那里种有我们的梦想</h3>
+                                    <div class="am-gallery-desc">2375-09-26</div>
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="am-gallery-item">
+                                <a href="Temp-images/dd.jpg">
+                                    <img src="Temp-images/cc.jpg" data-replace-img="Temp-images/dd.jpg" alt="远方 有一个地方 那里种有我们的梦想"/>
+                                    <h3 class="am-gallery-title">远方 有一个地方 那里种有我们的梦想</h3>
+                                    <div class="am-gallery-desc">2375-09-26</div>
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="am-gallery-item">
+                                <a href="Temp-images/dd.jpg">
+                                    <img src="Temp-images/cc.jpg" data-replace-img="Temp-images/dd.jpg" alt="远方 有一个地方 那里种有我们的梦想"/>
+                                    <h3 class="am-gallery-title">远方 有一个地方 那里种有我们的梦想</h3>
+                                    <div class="am-gallery-desc">2375-09-26</div>
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="am-gallery-item">
+                                <a href="Temp-images/dd.jpg">
+                                    <img src="Temp-images/cc.jpg" data-replace-img="Temp-images/dd.jpg" alt="远方 有一个地方 那里种有我们的梦想"/>
+                                    <h3 class="am-gallery-title">远方 有一个地方 那里种有我们的梦想</h3>
+                                    <div class="am-gallery-desc">2375-09-26</div>
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="am-gallery-item">
+                                <a href="Temp-images/dd.jpg">
+                                    <img src="Temp-images/cc.jpg" data-replace-img="Temp-images/dd.jpg" alt="远方 有一个地方 那里种有我们的梦想"/>
+                                    <h3 class="am-gallery-title">远方 有一个地方 那里种有我们的梦想</h3>
+                                    <div class="am-gallery-desc">2375-09-26</div>
+                                </a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+
+                <div id="gongju" class="dn case am-animation-slide-right">
+                    <ul class="am-gallery am-avg-sm-2 am-avg-md-4 am-avg-lg-4 am-gallery-overlay" data-am-gallery="{ pureview: true }" >
+                        <li>
+                            <div class="am-gallery-item">
+                                <a href="Temp-images/dd.jpg">
+                                    <img src="Temp-images/cc.jpg" data-replace-img="Temp-images/dd.jpg" alt="远方 有一个地方 那里种有我们的梦想"/>
+                                    <h3 class="am-gallery-title">远方 有一个地方 那里种有我们的梦想</h3>
+                                    <div class="am-gallery-desc">2375-09-26</div>
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="am-gallery-item">
+                                <a href="Temp-images/dd.jpg">
+                                    <img src="Temp-images/cc.jpg" data-replace-img="Temp-images/dd.jpg" alt="远方 有一个地方 那里种有我们的梦想"/>
+                                    <h3 class="am-gallery-title">远方 有一个地方 那里种有我们的梦想</h3>
+                                    <div class="am-gallery-desc">2375-09-26</div>
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="am-gallery-item">
+                                <a href="Temp-images/dd.jpg">
+                                    <img src="Temp-images/cc.jpg" data-replace-img="Temp-images/dd.jpg" alt="远方 有一个地方 那里种有我们的梦想"/>
+                                    <h3 class="am-gallery-title">远方 有一个地方 那里种有我们的梦想</h3>
+                                    <div class="am-gallery-desc">2375-09-26</div>
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="am-gallery-item">
+                                <a href="Temp-images/dd.jpg">
+                                    <img src="Temp-images/cc.jpg" data-replace-img="Temp-images/dd.jpg" alt="远方 有一个地方 那里种有我们的梦想"/>
+                                    <h3 class="am-gallery-title">远方 有一个地方 那里种有我们的梦想</h3>
+                                    <div class="am-gallery-desc">2375-09-26</div>
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="am-gallery-item">
+                                <a href="Temp-images/dd.jpg">
+                                    <img src="Temp-images/cc.jpg" data-replace-img="Temp-images/dd.jpg" alt="远方 有一个地方 那里种有我们的梦想"/>
+                                    <h3 class="am-gallery-title">远方 有一个地方 那里种有我们的梦想</h3>
+                                    <div class="am-gallery-desc">2375-09-26</div>
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="am-gallery-item">
+                                <a href="Temp-images/dd.jpg">
+                                    <img src="Temp-images/cc.jpg" data-replace-img="Temp-images/dd.jpg" alt="远方 有一个地方 那里种有我们的梦想"/>
+                                    <h3 class="am-gallery-title">远方 有一个地方 那里种有我们的梦想</h3>
+                                    <div class="am-gallery-desc">2375-09-26</div>
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="am-gallery-item">
+                                <a href="Temp-images/dd.jpg">
+                                    <img src="Temp-images/cc.jpg" data-replace-img="Temp-images/dd.jpg" alt="远方 有一个地方 那里种有我们的梦想"/>
+                                    <h3 class="am-gallery-title">远方 有一个地方 那里种有我们的梦想</h3>
+                                    <div class="am-gallery-desc">2375-09-26</div>
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="am-gallery-item">
+                                <a href="Temp-images/dd.jpg">
+                                    <img src="Temp-images/cc.jpg" data-replace-img="Temp-images/dd.jpg" alt="远方 有一个地方 那里种有我们的梦想"/>
+                                    <h3 class="am-gallery-title">远方 有一个地方 那里种有我们的梦想</h3>
+                                    <div class="am-gallery-desc">2375-09-26</div>
+                                </a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div> -->
+    <!-- <div class="am-u-sm-12 am-u-md-12 am-u-lg-4">
+        <div data-am-widget="titlebar" class="am-titlebar am-titlebar-default">
+            <h2 class="am-titlebar-title ">
+                个人专栏
+            </h2>
+            <nav class="am-titlebar-nav">
+                <a href="#more">more &raquo;</a>
+            </nav>
+        </div>
+        <div data-am-widget="list_news" class="am-list-news am-list-news-default right-bg" data-am-scrollspy="{animation:'fade'}">
+                <ul class="am-list"  >
+                    <li class="am-g am-list-item-desced am-list-item-thumbed am-list-item-thumb-left">
+                        <div class="am-u-sm-4 am-list-thumb">
+                            <a href="http://www.douban.com/online/11624755/">
+                                <img src="Temp-images/face.jpg" class="face"/>
+                            </a>
+                        </div>
+
+                        <div class=" am-u-sm-8 am-list-main">
+                            <h3 class="am-list-item-hd"><a href="http://www.douban.com/online/11624755/">勾三古寺</a></h3>
+
+                            <div class="am-list-item-text">代码压缩和最小化。在这里，我们为你收集了9个最好的JavaScript压缩工具将帮</div>
+                        </div>
+                    </li>
+                    <hr data-am-widget="divider" style="" class="am-divider am-divider-default" />
+                    <li class="am-g am-list-item-desced am-list-item-thumbed am-list-item-thumb-left">
+                        <div class="am-u-sm-4 am-list-thumb">
+                            <a href="http://www.douban.com/online/11624755/">
+                                <img src="Temp-images/face.jpg" class="face"/>
+                            </a>
+                        </div>
+
+                        <div class=" am-u-sm-8 am-list-main">
+                            <h3 class="am-list-item-hd"><a href="http://www.douban.com/online/11624755/">勾三古寺</a></h3>
+
+                            <div class="am-list-item-text">代码压缩和最小化。在这里，我们为你收集了9个最好的JavaScript压缩工具将帮</div>
+
+                        </div>
+                    </li>
+                    <hr data-am-widget="divider" style="" class="am-divider am-divider-default" />
+                    <li class="am-g am-list-item-desced am-list-item-thumbed am-list-item-thumb-left">
+                        <div class="am-u-sm-4 am-list-thumb">
+                            <a href="http://www.douban.com/online/11624755/">
+                                <img src="Temp-images/face.jpg" class="face"/>
+                            </a>
+                        </div>
+
+                        <div class=" am-u-sm-8 am-list-main">
+                            <h3 class="am-list-item-hd"><a href="http://www.douban.com/online/11624755/">勾三古寺</a></h3>
+
+                            <div class="am-list-item-text">代码压缩和最小化。在这里，我们为你收集了9个最好的JavaScript压缩工具将帮</div>
+
+                        </div>
+                    </li>
+                </ul>
+        </div>
+
+        <div data-am-widget="titlebar" class="am-titlebar am-titlebar-default">
+            <h2 class="am-titlebar-title ">
+                合作专栏
+            </h2>
+            <nav class="am-titlebar-nav">
+                <a href="#more">more &raquo;</a>
+            </nav>
+        </div>
+
+        <div data-am-widget="list_news" class="am-list-news am-list-news-default right-bg" data-am-scrollspy="{animation:'fade'}">
+            <ul class="am-list">
+                <li class="am-g am-list-item-desced am-list-item-thumbed am-list-item-thumb-left">
+                    <div class="am-u-sm-4 am-list-thumb">
+                        <a href="http://www.douban.com/online/11624755/">
+                            <img src="Temp-images/face.jpg" class="face"/>
+                        </a>
+                    </div>
+
+                    <div class=" am-u-sm-8 am-list-main">
+                        <h3 class="am-list-item-hd"><a href="http://www.douban.com/online/11624755/">勾三古寺</a></h3>
+
+                        <div class="am-list-item-text">代码压缩和最小化。在这里，我们为你收集了9个最好的JavaScript压缩工具将帮</div>
+                    </div>
+                </li>
+                <hr data-am-widget="divider" style="" class="am-divider am-divider-default" />
+                <li class="am-g am-list-item-desced am-list-item-thumbed am-list-item-thumb-left">
+                    <div class="am-u-sm-4 am-list-thumb">
+                        <a href="http://www.douban.com/online/11624755/">
+                            <img src="Temp-images/face.jpg" class="face"/>
+                        </a>
+                    </div>
+
+                    <div class=" am-u-sm-8 am-list-main">
+                        <h3 class="am-list-item-hd"><a href="http://www.douban.com/online/11624755/">勾三古寺</a></h3>
+
+                        <div class="am-list-item-text">代码压缩和最小化。在这里，我们为你收集了9个最好的JavaScript压缩工具将帮</div>
+
+                    </div>
+                </li>
+                <hr data-am-widget="divider" style="" class="am-divider am-divider-default" />
+                <li class="am-g am-list-item-desced am-list-item-thumbed am-list-item-thumb-left">
+                    <div class="am-u-sm-4 am-list-thumb">
+                        <a href="http://www.douban.com/online/11624755/">
+                            <img src="Temp-images/face.jpg" class="face"/>
+                        </a>
+                    </div>
+
+                    <div class=" am-u-sm-8 am-list-main">
+                        <h3 class="am-list-item-hd"><a href="http://www.douban.com/online/11624755/">勾三古寺</a></h3>
+
+                        <div class="am-list-item-text">代码压缩和最小化。在这里，我们为你收集了9个最好的JavaScript压缩工具将帮</div>
+
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div data-am-widget="titlebar" class="am-titlebar am-titlebar-default">
+            <h2 class="am-titlebar-title ">
+                评测
+            </h2>
+            <nav class="am-titlebar-nav">
+                <a href="#more">more &raquo;</a>
+            </nav>
+        </div>
+
+        <div data-am-widget="list_news" class="am-list-news am-list-news-default right-bg" data-am-scrollspy="{animation:'fade'}">
+            <ul class="am-list"  >
+                <li class="am-g am-list-item-desced am-list-item-thumbed am-list-item-thumb-left">
+                    <div class="am-u-sm-4 am-list-thumb">
+                        <a href="http://www.douban.com/online/11624755/">
+                            <img src="Temp-images/face.jpg"/>
+                        </a>
+                    </div>
+
+                    <div class=" am-u-sm-8 am-list-main">
+                        <h3 class="am-list-item-hd"><a href="http://www.douban.com/online/11624755/">勾三古寺</a></h3>
+
+                        <div class="am-list-item-text">代码压缩和最小化。在这里，我们为你收集了9个最好的JavaScript压缩工具将帮</div>
+                    </div>
+                </li>
+                <hr data-am-widget="divider" style="" class="am-divider am-divider-default" />
+                <li class="am-g am-list-item-desced am-list-item-thumbed am-list-item-thumb-left">
+                    <div class="am-u-sm-4 am-list-thumb">
+                        <a href="http://www.douban.com/online/11624755/">
+                            <img src="Temp-images/face.jpg"/>
+                        </a>
+                    </div>
+
+                    <div class=" am-u-sm-8 am-list-main">
+                        <h3 class="am-list-item-hd"><a href="http://www.douban.com/online/11624755/">勾三古寺</a></h3>
+
+                        <div class="am-list-item-text">代码压缩和最小化。在这里，我们为你收集了9个最好的JavaScript压缩工具将帮</div>
+
+                    </div>
+                </li>
+                <hr data-am-widget="divider" style="" class="am-divider am-divider-default" />
+                <li class="am-g am-list-item-desced am-list-item-thumbed am-list-item-thumb-left">
+                    <div class="am-u-sm-4 am-list-thumb">
+                        <a href="http://www.douban.com/online/11624755/">
+                            <img src="Temp-images/face.jpg"/>
+                        </a>
+                    </div>
+
+                    <div class=" am-u-sm-8 am-list-main">
+                        <h3 class="am-list-item-hd"><a href="http://www.douban.com/online/11624755/">勾三古寺</a></h3>
+
+                        <div class="am-list-item-text">代码压缩和最小化。在这里，我们为你收集了9个最好的JavaScript压缩工具将帮</div>
+
+                    </div>
+                </li>
+            </ul>
+        </div> -->
+
+        <!-- <ul class="am-gallery am-avg-sm-1
+  am-avg-md-1 am-avg-lg-1 am-gallery-default" data-am-gallery="{ pureview: true }" >
+            <li>
+                <div class="am-gallery-item">
+                    <a href="http://s.amazeui.org/media/i/demos/bing-1.jpg" class="">
+                        <img src="http://s.amazeui.org/media/i/demos/bing-1.jpg"  alt="远方 有一个地方 那里种有我们的梦想"/>
+                        <h3 class="am-gallery-title">远方 有一个地方 那里种有我们的梦想</h3>
+                        <div class="am-gallery-desc">
+                            <div class="am-fr">北京</div>
+                            <div class="am-fl">2016/11/11</div>
+                        </div>
+                    </a>
+                </div>
+            </li>
+            <li>
+                <div class="am-gallery-item">
+                    <a href="http://s.amazeui.org/media/i/demos/bing-2.jpg" class="">
+                        <img src="http://s.amazeui.org/media/i/demos/bing-2.jpg"  alt="某天 也许会相遇 相遇在这个好地方"/>
+                        <h3 class="am-gallery-title">某天 也许会相遇 相遇在这个好地方</h3>
+                        <div class="am-gallery-desc">
+                            <div class="am-fr">北京</div>
+                            <div class="am-fl">2016/11/11</div>
+                        </div>
+                    </a>
+                </div>
+            </li>
+            <li>
+                <div class="am-gallery-item">
+                    <a href="http://s.amazeui.org/media/i/demos/bing-2.jpg" class="">
+                        <img src="http://s.amazeui.org/media/i/demos/bing-2.jpg"  alt="某天 也许会相遇 相遇在这个好地方"/>
+                        <h3 class="am-gallery-title">某天 也许会相遇 相遇在这个好地方</h3>
+                        <div class="am-gallery-desc">
+                            <div class="am-fr">北京</div>
+                            <div class="am-fl">2016/11/11</div>
+                        </div>
+                    </a>
+                </div>
+            </li>
+        </ul> -->
+
+    </div>
+</div>
+
+<div data-am-widget="gotop" class="am-gotop am-gotop-fixed" >
+    <a href="#top" title="回到顶部">
+        <span class="am-gotop-title">回到顶部</span>
+        <i class="am-gotop-icon am-icon-chevron-up"></i>
+    </a>
+</div>
+
+<footer>
+    <div class="content">
+        <ul class="am-avg-sm-3 am-avg-md-3 am-avg-lg-3 am-thumbnails">
+            <li><a href="#">联系我们</a></li>
+            <!-- <li><a href="#">加入我们</a></li> -->
+            <li><a href="#">合作伙伴</a></li>
+            <!-- <li><a href="#">广告及服务</a></li> -->
+            <li><a href="#">友情链接</a></li>
+        </ul>
+        <div class="btnlogo"><img src="images/btnlogo.png"/></div>
+        <p>朗博厨卫出品<br>© 2018 CasterQi Licensed under MIT license. </p>
+        <!-- <div class="w2div">
+        <ul data-am-widget="gallery" class="am-gallery am-avg-sm-2
+  am-avg-md-2 am-avg-lg-2 am-gallery-overlay" data-am-gallery="{ pureview: true }" >
+            <li class="w2">
+                <div class="am-gallery-item">
+                    <a href="Temp-images/dd.jpg">
+                        <img src="Temp-images/dd.jpg" />
+                        <h3 class="am-gallery-title">订阅号：Amaze UI</h3>
+                    </a>
+                </div>
+            </li>
+            <li   class="w2">
+                <div class="am-gallery-item">
+                    <a href="Temp-images/dd.jpg">
+                        <img src="Temp-images/dd.jpg"/>
+                        <h3 class="am-gallery-title">服务号：Amaze UI</h3>
+                    </a>
+                </div>
+            </li>
+        </ul>
+        </div> -->
+    </div>
+</footer>
+</body>
+</html>

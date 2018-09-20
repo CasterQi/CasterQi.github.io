@@ -2,6 +2,15 @@
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
     <url>
+      <loc>/blog/%E7%A0%81%E5%86%9C%E4%B8%8E%E4%BB%A3%E5%AD%95/</loc>
+      
+        <lastmod>2018-09-20T00:00:00+08:00</lastmod>
+      
+      <changefreq>weekly</changefreq>
+      <priority>0.7</priority>
+    </url>
+  
+    <url>
       <loc>/blog/%E9%A3%9E/</loc>
       
         <lastmod>2018-04-01T00:00:00+08:00</lastmod>
