@@ -113,7 +113,10 @@ sitemap:
 
 			<!-- Posts -->
 			<section class="posts">
-				{% for post in site.posts limit:99 %} {% comment %} {% assign mod3 = forloop.index | modulo: 3 %} {% endcomment %}
+				{% for post in site.posts limit:99 %} 
+				{% comment %} 
+				{% assign mod3 = forloop.index | modulo: 3 %} 
+				{% endcomment %}
 				<article>
 					<header>
 						<span class="date">{{ post.date | date_to_string }}</span>
@@ -137,7 +140,8 @@ sitemap:
 							<a href="#">Sponsored</h2>
 					</header>
 				</article>
-				{% endif %} {% endcomment %} {% endfor %}
+				{% endif %} {% endcomment %} 
+				{% endfor %}
 
 			</section>
 

@@ -53,7 +53,9 @@
 					<!-- Post -->
 					<section class="posts">
 						{% for post in site.tags.blog %}
-						{% assign mod3 = forloop.index | modulo: 3 %}
+							{% comment %} 
+							{% assign mod3 = forloop.index | modulo: 3 %}
+							{% endcomment %} 
 							<article>
 								<header>
 									<span class="date">{{ post.date | date_to_string }}</span>
@@ -65,14 +67,16 @@
 									<li><a href="{{ post.url | absolute_url }}" class="button">阅读全文</a></li>
 								</ul>
 							</article>
-							<!-- {% if mod3 == 0 %}
+							{% comment %} 
+							{% if mod3 == 0 %}
 							<article>
 								<header>
 									<h2><a href="#">Sponsored</h2>
 								</header>
 
 							</article>
-							{% endif %} -->
+							{% endif %}
+							{% endcomment %} 
 						{% endfor %}
 
 					</section>
