@@ -1,0 +1,6 @@
+
+Temp-images 临时图片目录（一些模板用的图片保存在这里，与程序整合后可删除的目录）
+assets	AmazeUI/Jquery等框架、外部功能引用的存储位置
+images	图片目录
+css	css文件存放的目录
+js	js文件存放的目录
