@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<style>
+div{
+    /* background:red; */
+    display: none;
+    position: absolute;
+    left:50%;
+    top:50%;
+    transform: translate(-50%, -50%);
+}
+</style>
+<script src="../assets/js/jquery.min.js"></script>
+<script>
+$().ready(()=>{
+    var name=prompt("来对暗号！","啊？还有暗号？")
+  if (name!=null && name!="")
+    if(name=="mxm"){
+        $('div').css('display','block')
+    }else
+    {
+     alert("暗号不对哦")
+    }
+})
+function disp_prompt()
+  {
+ 
+  }
+
+</script>
+<body>
+    <div >
+            <form action="insert.php" method="post" target="_blank">
+                    编&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;号: <input type="text" name="number" /><br>
+                    名&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;称: <input type="text" name="name" /><br>
+                    标&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;签: <input type="text" name="tag" /><br>
+                    微信教程: <input type="text" name="wx" /><br>
+                    腾讯视频: <input type="text" name="txvideo" /><br>
+                    淘宝链接: <input type="text" name="tb" /><br>
+                    图片链接: <input type="text" name="img" /><br>
+                    微信商城:<input type="text" name="wxshop" /><br>
+                    密&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;码: <input type="text" name="pwd" /><br>
+                    <input type="submit" />
+                </form>
+                <br><br>
+                <form action="insert.php?a=d" method="post" target="_blank">
+                        删除最后一条记录<br>
+                        密&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;码: <input type="text" name="pwd2" /><br>
+                        确认删除，此操作无法撤销<input type="submit" >
+                    </form>
+    </div>
+
+
+</body>
+
+</html>
